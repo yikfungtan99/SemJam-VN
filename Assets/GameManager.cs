@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static int x = 1;
+    public int x;
 
+    private void Start()
+    {
+        x = 0;
+    }
+    
     public void Test()
     {
         Debug.Log("Working");

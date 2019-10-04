@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
+    public GameManager gm;
+    int option = 0;
+
     public void Option()
     {
-        int option = GameManager.x;
-        GameManager.x++;
+        gm.x++;
+
+        Debug.Log("CUrrent Stage:" + gm.x);
+
+        option = gm.x;
+
 
         if (option == 1)
         {
