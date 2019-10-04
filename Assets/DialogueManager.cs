@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Option()
     {
-        
-    }
+        int option = GameManager.x;
+        GameManager.x++;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (option == 1)
+        {
+            Debug.Log("fuck");
+        }
+        else if  (option == 2)
+        {
+            Debug.Log("you");
+        }
     }
 }
