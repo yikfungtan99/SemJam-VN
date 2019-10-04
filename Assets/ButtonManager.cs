@@ -10,9 +10,16 @@ public class ButtonManager : MonoBehaviour
     public Button button1;
     public Button button2;
 
+    public Vector2[] button1Pos;
+
     // Start is called before the first frame update
     void ChangePos()
     {
+        gm.x++;
 
+        if(gm.x == 1)
+        {
+            
+        }
     }
 }

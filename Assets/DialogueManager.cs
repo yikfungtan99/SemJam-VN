@@ -11,10 +11,7 @@ public class DialogueManager : MonoBehaviour
     {
         gm.x++;
 
-        Debug.Log("CUrrent Stage:" + gm.x);
-
         option = gm.x;
-
 
         if (option == 1)
         {
