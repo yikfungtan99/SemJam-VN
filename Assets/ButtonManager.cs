@@ -7,19 +7,20 @@ public class ButtonManager : MonoBehaviour
 {
     public GameManager gm;
 
-    public Button button1;
-    public Button button2;
+    public RectTransform button1;
+    public RectTransform button2;
 
     public Vector2[] button1Pos;
+    public Vector2[] button1Size;
 
     // Start is called before the first frame update
-    void ChangePos()
-    {
-        gm.x++;
 
-        if(gm.x == 1)
-        {
-            
-        }
+    public void ChangePos()
+    {
+        Debug.Log(gm.x);
+
+        button1.localPosition = button1Pos[gm.x];
+        button1.localScale = button1Size[gm.x];
+
     }
 }
