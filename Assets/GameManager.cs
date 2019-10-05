@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int x;
+    public int stage;
+
+    public int level;
 
     private void Start()
     {
-        x = 0;
-    }
-    
-    public void Test()
-    {
-        Debug.Log("Working");
+        stage = 0;
     }
 }
