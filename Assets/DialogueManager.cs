@@ -63,7 +63,7 @@ public class DialogueManager : MonoBehaviour
         if (page == 5)
         {
             bm.actionPhase(1);
-            dialogue.SetText("A shadowy figure stands at the other end.");
+            dialogue.SetText("A <color=yellow>shadowy figure</color> stands at the other end.");
         }
         if (page == 6)
         {
@@ -86,7 +86,7 @@ public class DialogueManager : MonoBehaviour
         {
             cm.ChangeSprite("Bandit", "Attack");
             bm.actionPhase(2);
-            dialogue.SetText("Heh, like I thought so. Faraway fella, betcha be rich, hmm?");
+            dialogue.SetText("Heh, like I thought so. <color=yellow>Faraway</color> fella, betcha <color=yellow>be rich</color>, hmm?");
         }
         if (page == 10)
         {
@@ -106,12 +106,12 @@ public class DialogueManager : MonoBehaviour
         if (page == 11)
         {
             bm.actionPhase(1);
-            dialogue.SetText("You make pick up the piece of paper, however, you can only make out a few parts of it.");
+            dialogue.SetText("You pick up the <color=yellow>piece of paper</color>, however, you can only make out a few parts of it.");
         }
         if (page == 12)
         {
             bm.actionPhase(3);
-            dialogue.SetText("Message:”I need you to… at the...dungeon. With this power we can… the castle… Faerghus forbids… Scarlet… moon of death..");
+            dialogue.SetText("Message:”I need you to… at the...<color=yellow>dungeon</color>. With this power we can… <color=yellow>the castle</color>… Faerghus forbids… Scarlet… <color=yellow>moon of death</color>..");
         }
         if (page == 13)
         {
@@ -139,13 +139,13 @@ public class DialogueManager : MonoBehaviour
             cm.ChangeSprite("Guard", "Attack");
             charName.SetText("Guard");
             bm.actionPhase(1);
-            dialogue.SetText("Halt! Stop right there.");
+            dialogue.SetText("<color=yellow>Halt</color>! Stop right there.");
         }
         if (page == 15)
         {
             cm.ChangeSprite("Guard", "Normal");
             bm.actionPhase(1);
-            dialogue.SetText("The guard is frozen to the spot. You casually walk past him into the throne room.");
+            dialogue.SetText("The guard is frozen to the spot. You casually walk past him into the <color=yellow>throne room</color>.");
         }
         if (page == 16)
         {
@@ -158,7 +158,7 @@ public class DialogueManager : MonoBehaviour
         {
             cm.ChangeSprite("King", "Seize");
             bm.actionPhase(1);
-            dialogue.SetText("Guards, seize this fool!");
+            dialogue.SetText("Guards, <color=yellow>seize</color> this fool!");
         }
         if (page == 18)
         {
@@ -175,9 +175,9 @@ public class DialogueManager : MonoBehaviour
             charName.SetText("Witch");
             cm.ChangeSprite("Witch", "Normal");
             bm.actionPhase(3);
-            dialogue.SetText("Hello there. What brings you to my domain? \n" +
-                             "Did you really think that I’ll help you get back home after what you’ve done. \n" +
-                             "At the very least you deserve some kind of punishment!");
+            dialogue.SetText("Hello there. What brings you to <color=yellow>my domain</color>? \n" +
+                             "Did you really think that I’ll help you get <color=yellow>back home</color> after what you’ve done. \n" +
+                             "At the very least you deserve some kind of <color=yellow>punishment</color>!");
         }
 
         if (page == 21)
