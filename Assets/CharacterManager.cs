@@ -30,4 +30,9 @@ public class CharacterManager : MonoBehaviour
             spr.sprite = FemaleStudent[expNum];
         }
     }
+
+    public void ClearSprite()
+    {
+        spr.sprite = null;
+    }
 }
