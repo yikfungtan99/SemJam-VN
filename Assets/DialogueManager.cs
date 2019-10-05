@@ -1,25 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
     public GameManager gm;
-    int option = 0;
+    public TextMeshProUGUI dialogue;
+    public CharacterManager cm;
+    public TextMeshProUGUI charName;
 
-    public void Option()
+    int page = 0;
+
+    public void Page()
     {
-        gm.x++;
+        gm.stage++;
 
-        option = gm.x;
+        page = gm.stage;
 
-        if (option == 1)
+        if (page == 1)
         {
-            Debug.Log("fuck");
+            dialogue.SetText("lollolololol");
+            cm.ChangeSprite("FemaleStudent1", "Blush");
         }
-        else if  (option == 2)
+        else if  (page == 2)
         {
-            Debug.Log("you");
+            dialogue.SetText("lmao");
+            cm.ChangeSprite("FemaleStudent1", "Happy");
         }
     }
 }

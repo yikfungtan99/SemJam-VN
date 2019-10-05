@@ -28,10 +28,8 @@ public class ButtonManager : MonoBehaviour
 
     public void ChangePos()
     {
-        Debug.Log(gm.x);
+        buttonRectTransform1.localPosition = button1Pos[gm.stage];
 
-        buttonRectTransform1.localPosition = button1Pos[gm.x];
-
-        buttonRectTransform1.sizeDelta = new Vector2(button1Width[gm.x], 64);
+        buttonRectTransform1.sizeDelta = new Vector2(button1Width[gm.stage], 64);
     }
 }
