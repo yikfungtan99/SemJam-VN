@@ -6,9 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public int stage;
 
+    public int level;
+
     private void Start()
     {
         stage = 0;
     }
-   
 }
