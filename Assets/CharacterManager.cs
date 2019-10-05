@@ -4,30 +4,76 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    public Sprite[] FemaleStudent;
+    public Sprite ShadowyFigure;
+    public Sprite[] Bandit, Guard, King, Witch;
     public SpriteRenderer spr;
     private int expNum;
 
     public void ChangeSprite(string name, string expression)
     {
-        if (name == "FemaleStudent1")
+        if(name == "ShadowyFigure")
         {
-            if (expression == "Blush")
+            spr.sprite = ShadowyFigure;
+        }
+
+        if (name == "Bandit")
+        {
+            if (expression == "Normal")
             {
                 expNum = 0;
             }
 
-            if (expression == "Happy")
+            if (expression == "Attack")
             {
                 expNum = 1;
             }
 
-            if (expression == "Sad")
+            spr.sprite = Bandit[expNum];
+        }
+
+        if (name == "Guard")
+        {
+            if (expression == "Normal")
             {
-                expNum = 2;
+                expNum = 0;
             }
 
-            spr.sprite = FemaleStudent[expNum];
+            if (expression == "Attack")
+            {
+                expNum = 1;
+            }
+
+            spr.sprite = Guard[expNum];
+        }
+
+        if (name == "King")
+        {
+            if (expression == "Normal")
+            {
+                expNum = 0;
+            }
+
+            if (expression == "Seize")
+            {
+                expNum = 1;
+            }
+
+            spr.sprite = King[expNum];
+        }
+
+        if (name == "Witch")
+        {
+            if (expression == "Normal")
+            {
+                expNum = 0;
+            }
+
+            if (expression == "Angry")
+            {
+                expNum = 1;
+            }
+
+            spr.sprite = Witch[expNum];
         }
     }
 

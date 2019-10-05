@@ -30,6 +30,7 @@ public class DialogueManager : MonoBehaviour
         bm.button2.SetActive(false);
         bm.button3.SetActive(false);
         bm.buttonNext.SetActive(false);
+        bm.buttonQuit.SetActive(true);
 
         bgm.BackgroundChange("MainMenu");
         stage = 0;
@@ -43,6 +44,8 @@ public class DialogueManager : MonoBehaviour
             dialogueWindow.SetActive(true);
             bm.buttonNext.SetActive(true);
             bm.buttonStart.SetActive(false);
+            bm.buttonQuit.SetActive(false);
+
             dialogue.SetText("You awoke in a strange place.");
         }
         if (page == 2)
@@ -64,6 +67,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (page == 6)
         {
+            cm.ChangeSprite("ShadowyFigure", null);
             bgm.BackgroundChange("Alleyway");
             charName.SetText("Shadowy Figure");
             dialogue.SetText("Oi mate! Whatcha doin’ over there?");
@@ -74,11 +78,13 @@ public class DialogueManager : MonoBehaviour
         }
         if (page == 8)
         {
+            cm.ChangeSprite("Bandit", "Normal");
             charName.SetText("Bandit");
             dialogue.SetText("Whatchu wearin’? Don’t seem to be around here, eh?");
         }
         if (page == 9)
         {
+            cm.ChangeSprite("Bandit", "Attack");
             bm.actionPhase(2);
             dialogue.SetText("Heh, like I thought so. Faraway fella, betcha be rich, hmm?");
         }
@@ -86,6 +92,7 @@ public class DialogueManager : MonoBehaviour
         {
             if(flag == 1)
             {
+                cm.ClearSprite();
                 dialogue.SetText("The bandit is teleported far far away. As he disappears, a piece of paper falls out of his coat.");
             }
 
@@ -110,6 +117,7 @@ public class DialogueManager : MonoBehaviour
         {
             if(flag == 1)
             {
+                cm.ChangeSprite("Guard", "Normal");
                 bgm.BackgroundChange("Entrance");
                 dialogue.SetText("You find yourself in front of a large imposing castle. You see one guard standing watch.");
             }
@@ -128,28 +136,33 @@ public class DialogueManager : MonoBehaviour
         }
         if (page == 14)
         {
+            cm.ChangeSprite("Guard", "Attack");
             charName.SetText("Guard");
             bm.actionPhase(1);
             dialogue.SetText("Halt! Stop right there.");
         }
         if (page == 15)
         {
+            cm.ChangeSprite("Guard", "Normal");
             bm.actionPhase(1);
             dialogue.SetText("The guard is frozen to the spot. You casually walk past him into the throne room.");
         }
         if (page == 16)
         {
+            cm.ChangeSprite("King", "Normal");
             charName.SetText("King");
             bgm.BackgroundChange("ThroneRoom");
             dialogue.SetText("What is the meaning of this?!");
         }
         if (page == 17)
         {
+            cm.ChangeSprite("King", "Seize");
             bm.actionPhase(1);
             dialogue.SetText("Guards, seize this fool!");
         }
         if (page == 18)
         {
+            cm.ClearSprite();
             dialogue.SetText("The guards pounce on the king altogether, binded by a flurry of big men in steel armour, the king is unable to breathe and dies..");
         }
         if (page == 19)
@@ -160,7 +173,7 @@ public class DialogueManager : MonoBehaviour
         if (page == 20)
         {
             charName.SetText("Witch");
-            cm.ChangeSprite("FemaleStudent1", "Blush");
+            cm.ChangeSprite("Witch", "Normal");
             bm.actionPhase(3);
             dialogue.SetText("Hello there. What brings you to my domain? \n" +
                              "Did you really think that I’ll help you get back home after what you’ve done. \n" +
@@ -178,6 +191,7 @@ public class DialogueManager : MonoBehaviour
 
             if(flag == 2)
             {
+                cm.ChangeSprite("Witch", "Angry");
                 bgm.BackgroundChange("Black");
                 page = 24;
                 NextPage();
@@ -185,6 +199,7 @@ public class DialogueManager : MonoBehaviour
 
             if (flag == 3)
             {
+                cm.ChangeSprite("Witch", "Angry");
                 bgm.BackgroundChange("Black");
                 page = 24;
                 NextPage();
@@ -253,5 +268,10 @@ public class DialogueManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

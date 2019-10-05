@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23141998, g: 0.8867924, b: 0, a: 0.627451}
+  m_Color: {r: 0.23141998, g: 0.8867924, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -764,7 +764,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.000002, y: 35.00855}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -778,8 +778,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620099982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.457, y: -3.121, z: 0}
-  m_LocalScale: {x: 0.6126259, y: 0.6126259, z: 0.6126259}
+  m_LocalPosition: {x: -0.4, y: 0.08, z: 0}
+  m_LocalScale: {x: 0.80131465, y: 0.9367369, z: 0.80131465}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.6}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1190,7 +1190,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1511311915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 22480462}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1511311915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,10 +1398,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd282bd49143d04588607d6d86eefe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FemaleStudent:
-  - {fileID: 21300000, guid: d0c63e47b11d4a541bcd08df11035785, type: 3}
-  - {fileID: 21300000, guid: 280e0107db8df1e4d9895512c8ed8316, type: 3}
-  - {fileID: 21300000, guid: 2d47088e24f49a547b9d8d982ed05ed3, type: 3}
+  ShadowyFigure: {fileID: 21300000, guid: a7b0198c1135d054bb5f123838916c81, type: 3}
+  Bandit:
+  - {fileID: 21300000, guid: 271bc2828c47a104585a2ce11acbf0cb, type: 3}
+  - {fileID: 21300000, guid: 306aab254f42037488e94e7fc0f17e0e, type: 3}
+  Guard:
+  - {fileID: 21300000, guid: 2222289e988edba4f9c87b673f06294b, type: 3}
+  - {fileID: 21300000, guid: 7372b096ccdc0934baf9a9fbb417c222, type: 3}
+  King:
+  - {fileID: 21300000, guid: 3a3a14797a4b0b04e974aafa071c2da1, type: 3}
+  - {fileID: 21300000, guid: 08dda3955638b71459f35e23d4db030c, type: 3}
+  Witch:
+  - {fileID: 21300000, guid: 4dc8433e27176ef4cbf3508d2a581c08, type: 3}
+  - {fileID: 21300000, guid: 92c5dd8e0494f4d4f9deeeafcb646908, type: 3}
   spr: {fileID: 620099983}
 --- !u!4 &1733815101
 Transform:
@@ -1426,6 +1446,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 41fd515e7e2dbd64ba6fdf4a3beb7f2c, type: 3}
   - {fileID: 21300000, guid: 1f9fe87fe3ed5e847a49c581e2496744, type: 3}
   - {fileID: 21300000, guid: eb81d52ba45653541bac2251b2668906, type: 3}
+  - {fileID: 21300000, guid: 54cd22183f8ab9c479ef18a0c4ff00ea, type: 3}
   backGroundSpr: {fileID: 250221857}
 --- !u!1 &1874172898
 GameObject:
@@ -1689,7 +1710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19241722, g: 0.38352877, b: 0.8679245, a: 0.7058824}
+  m_Color: {r: 0.19241722, g: 0.38352877, b: 0.8679245, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
