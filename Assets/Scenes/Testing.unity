@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.23141998, g: 0.8867924, b: 0, a: 0.627451}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.6}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1425,6 +1425,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e771caf80c5fb024abe83ad33bedfac5, type: 3}
   - {fileID: 21300000, guid: 41fd515e7e2dbd64ba6fdf4a3beb7f2c, type: 3}
   - {fileID: 21300000, guid: 1f9fe87fe3ed5e847a49c581e2496744, type: 3}
+  - {fileID: 21300000, guid: eb81d52ba45653541bac2251b2668906, type: 3}
   backGroundSpr: {fileID: 250221857}
 --- !u!1 &1874172898
 GameObject:
@@ -1688,7 +1689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.19241722, g: 0.38352877, b: 0.8679245, a: 0.7058824}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1755,30 +1756,64 @@ MonoBehaviour:
   buttonQuit: {fileID: 1511311912}
   button1Pos:
   - {x: 0, y: 0}
-  - {x: -604, y: -347}
-  - {x: -564, y: -246}
-  - {x: -96.25, y: -242}
-  - {x: 191, y: -352}
+  - {x: -692.4, y: -226}
+  - {x: -228.8, y: -226}
+  - {x: -159.6, y: -226}
+  - {x: -809.1, y: -288}
+  - {x: -882.4, y: -218}
+  - {x: -780.81, y: -300}
+  - {x: -647.8, y: -224}
+  - {x: 259.5, y: -286}
   button1Width:
   - 0
-  - 344
-  - 525
-  - 192.5
-  - 431.35
+  - 357.2
+  - 193.2
+  - 339.7
+  - 230.6
+  - 91.3
+  - 315.05
+  - 126.3
+  - 260.4
   button2Pos:
   - {x: 0, y: 0}
   - {x: 0, y: 0}
+  - {x: 331.3, y: -217}
   - {x: 0, y: 0}
-  - {x: 0, y: 0}
+  - {x: 71.198, y: -217}
   - {x: -886, y: -455.07}
+  - {x: -886, y: -455.07}
+  - {x: -886, y: -455.07}
+  - {x: 39.3, y: -217}
   button2Width:
   - 0
   - 0
+  - 175.1
   - 0
-  - 0
+  - 242.39
   - 118.5
-  button3Pos: []
-  button3Width: []
+  - 118.5
+  - 118.5
+  - 296.5
+  button3Pos:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 378.87, y: -295}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 374, y: -433}
+  button3Width:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 372.95
+  - 0
+  - 0
+  - 0
+  - 372.95
 --- !u!4 &2129724202
 Transform:
   m_ObjectHideFlags: 0
@@ -1834,7 +1869,27 @@ PrefabInstance:
     - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822030120820244198, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822030120820244198, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4131370939866349224, guid: 087e61782806afb4f8ab90c8498e91b5,
         type: 3}

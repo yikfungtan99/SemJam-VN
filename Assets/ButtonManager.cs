@@ -62,6 +62,12 @@ public class ButtonManager : MonoBehaviour
             button1.SetActive(true);
             button2.SetActive(true);
         }
+        else if (buttonCount == 3)
+        {
+            button1.SetActive(true);
+            button2.SetActive(true);
+            button3.SetActive(true);
+        }
 
         dm.stage++;
         //Debug.Log("stage now = " + dm.stage);
@@ -90,6 +96,17 @@ public class ButtonManager : MonoBehaviour
             buttonRectTransform2.localPosition = button2Pos[dm.stage];
 
             buttonRectTransform2.sizeDelta = new Vector2(button2Width[dm.stage], 90);
+        }
+
+        if (dm.stage >= button3Pos.Length)
+        {
+            Debug.Log("Button 3 have no position left");
+        }
+        else
+        {
+            buttonRectTransform3.localPosition = button3Pos[dm.stage];
+
+            buttonRectTransform3.sizeDelta = new Vector3(button3Width[dm.stage], 90);
         }
     }
 
