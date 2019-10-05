@@ -34,6 +34,12 @@ public class ButtonManager : MonoBehaviour
     {
         buttonRectTransform1 = button1.GetComponent<RectTransform>();
         button1.SetActive(false);
+
+        buttonRectTransform2 = button2.GetComponent<RectTransform>();
+        button2.SetActive(false);
+
+        buttonRectTransform3 = button3.GetComponent<RectTransform>();
+        button3.SetActive(false);
     }
 
     public void ChangePage()
@@ -43,10 +49,20 @@ public class ButtonManager : MonoBehaviour
         Debug.Log(dm.page);
     }
 
-    public void actionPhase()
+    public void actionPhase(int buttonCount)
     {
+        dm.flag = 0;
         buttonNext.SetActive(false);
-        button1.SetActive(true);
+        if(buttonCount == 1)
+        {
+            button1.SetActive(true);
+        }
+        else if (buttonCount == 2)
+        {
+            button1.SetActive(true);
+            button2.SetActive(true);
+        }
+
         dm.stage++;
         //Debug.Log("stage now = " + dm.stage);
         setPos();
@@ -64,12 +80,25 @@ public class ButtonManager : MonoBehaviour
 
             buttonRectTransform1.sizeDelta = new Vector2(button1Width[dm.stage], 90);
         }
+
+        if (dm.stage >= button2Pos.Length)
+        {
+            Debug.Log("Button 2 have no position left");
+        }
+        else
+        {
+            buttonRectTransform2.localPosition = button2Pos[dm.stage];
+
+            buttonRectTransform2.sizeDelta = new Vector2(button2Width[dm.stage], 90);
+        }
     }
 
     public void setFlag1()
     {
         dm.flag = 1;
         button1.SetActive(false);
+        button2.SetActive(false);
+        button3.SetActive(false);
         buttonNext.SetActive(true);
         ChangePage();
     }
@@ -77,7 +106,9 @@ public class ButtonManager : MonoBehaviour
     public void setFlag2()
     {
         dm.flag = 2;
+        button1.SetActive(false);
         button2.SetActive(false);
+        button3.SetActive(false);
         buttonNext.SetActive(true);
         ChangePage();
     }
@@ -85,6 +116,8 @@ public class ButtonManager : MonoBehaviour
     public void setFlag3()
     {
         dm.flag = 3;
+        button1.SetActive(false);
+        button2.SetActive(false);
         button3.SetActive(false);
         buttonNext.SetActive(true);
         ChangePage();

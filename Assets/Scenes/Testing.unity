@@ -298,7 +298,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 225303415}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2129724201}
+        m_MethodName: setFlag3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &225303415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,8 +825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -886, y: -455.07}
+  m_SizeDelta: {x: 118.5, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833139000
 MonoBehaviour:
@@ -859,7 +870,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 833139001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2129724201}
+        m_MethodName: setFlag2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &833139001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1106,7 +1128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1511311913
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1397,9 +1419,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgrounds:
-  - {fileID: 21300000, guid: 54cd22183f8ab9c479ef18a0c4ff00ea, type: 3}
-  - {fileID: 21300000, guid: c241f0ba35b08bd49afabbf8a3fb60fd, type: 3}
-  - {fileID: 21300000, guid: 6e366031d6cfe1d4cad60811d7bb7752, type: 3}
+  - {fileID: 21300000, guid: fc2d6752eea0e38419742e28a7cc7e75, type: 3}
+  - {fileID: 21300000, guid: 879347de781938e47af835d4c6fac3b8, type: 3}
+  - {fileID: 21300000, guid: 8994fe228e383ef4c94c5d7d72aeb32c, type: 3}
+  - {fileID: 21300000, guid: e771caf80c5fb024abe83ad33bedfac5, type: 3}
+  - {fileID: 21300000, guid: 41fd515e7e2dbd64ba6fdf4a3beb7f2c, type: 3}
   - {fileID: 21300000, guid: 1f9fe87fe3ed5e847a49c581e2496744, type: 3}
   backGroundSpr: {fileID: 250221857}
 --- !u!1 &1874172898
@@ -1594,8 +1618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 496, y: -352}
-  m_SizeDelta: {x: 309.8, y: 63.7}
+  m_AnchoredPosition: {x: 191, y: -352}
+  m_SizeDelta: {x: 431.3, y: 63.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1877061542
 MonoBehaviour:
@@ -1664,7 +1688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1731,14 +1755,28 @@ MonoBehaviour:
   buttonQuit: {fileID: 1511311912}
   button1Pos:
   - {x: 0, y: 0}
-  - {x: -176.2, y: -352}
-  - {x: -311.4, y: -245.7}
+  - {x: -604, y: -347}
+  - {x: -564, y: -246}
+  - {x: -96.25, y: -242}
+  - {x: 191, y: -352}
   button1Width:
   - 0
-  - 309.8
-  - 293.02
-  button2Pos: []
-  button2Width: []
+  - 344
+  - 525
+  - 192.5
+  - 431.35
+  button2Pos:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: -886, y: -455.07}
+  button2Width:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 118.5
   button3Pos: []
   button3Width: []
 --- !u!4 &2129724202
@@ -1771,6 +1809,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_text
+      value: "Look, this can be easy and simple.You can fork over the cash and get
+        knocked out, or I\u2019ll just kill you instead"
+      objectReference: {fileID: 0}
+    - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 111
+      objectReference: {fileID: 0}
+    - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 210411492836726085, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4131370939866349224, guid: 087e61782806afb4f8ab90c8498e91b5,
         type: 3}
@@ -1876,6 +1940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919813209696047340, guid: 087e61782806afb4f8ab90c8498e91b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 087e61782806afb4f8ab90c8498e91b5, type: 3}

@@ -36,48 +36,150 @@ public class DialogueManager : MonoBehaviour
 
     public void NextPage()
     {
+
         if(page == 1)
         {
+            charName.SetText("");
+
             dialogueWindow.SetActive(true);
             bm.buttonNext.SetActive(true);
             bm.buttonStart.SetActive(false);
             bm.buttonQuit.SetActive(false);
 
-            bgm.BackgroundChange("RoomNight");  
-            dialogue.SetText("You awake in a strange town. Everyone is dressed stragely here and the architecture looks medieval in style.");
-            cm.ChangeSprite("FemaleStudent1", "Sad");
+            bgm.BackgroundChange("Black");  
+            dialogue.SetText("You awoke in a strange place.");
         }
 
-        if (page == 2)
+        if(page == 2)
         {
-            bm.actionPhase();
-            bgm.BackgroundChange("Room");
-            dialogue.SetText("You are now standing in an alleyway. There seems to be a shadowy figure at the other end.");
-            cm.ChangeSprite("FemaleStudent1", "Blush");
+            dialogue.SetText("The buildings around you, they seemed...medieval.");
         }
-        else if  (page == 3) 
+
+        if(page == 3)
         {
-            bgm.BackgroundChange("School");
-            dialogue.SetText("lmao");
-            cm.ChangeSprite("FemaleStudent1", "Happy");
+            dialogue.SetText("You tried to walk around, lost and confused.");
         }
-        else if (page == 4)
+
+        if (page == 4)
         {
-            bgm.BackgroundChange("notExist");
-            dialogue.SetText("Debug should show background not found");
-            cm.ChangeSprite("FemaleStudent1", "Sad");
+            bm.actionPhase(1);
+            bgm.BackgroundChange("Alleyway");
+            dialogue.SetText("An other-worldly traveller, a lost wanderer of the <color=green>alleyways</color> of time.");
         }
-        else if (page == 5)
+        if  (page == 5) 
         {
-            bgm.BackgroundChange("Room");
-            dialogue.SetText("is it working?");
-            cm.ChangeSprite("FemaleStudent1", "Sad");
+            dialogue.SetText("You took a sharp turn.");
         }
-        else if (page == 6)
+        if (page == 6)
         {
-            dialogue.SetText("is it working?");
-            cm.ChangeSprite("FemaleStudent1", "Sad");
+            dialogue.SetText("You found yourself in an alleyway.");
         }
+        if (page == 7)
+        {
+            bm.actionPhase(1);
+            dialogue.SetText("A <color=green>shadowy figure</color> stood at the other end.");
+        }
+        if (page == 8)
+        {
+            charName.SetText("???");
+            dialogue.SetText("Hey bud! Whatcha doin’ over there?");
+        }
+        if(page == 9)
+        {
+            dialogue.SetText("You tried to answer, but found yourself incapable.");
+        }
+        if(page == 10)
+        {
+            charName.SetText("Bandit");
+            bm.actionPhase(1);
+            dialogue.SetText("Whatchu wearin’? <color=green>Don’t</color> seem to be around here, eh?");
+        }
+        if (page == 11)
+        {
+            dialogue.SetText("You shook your head.");
+        }
+        if (page == 12)
+        {
+            dialogue.SetText("Heh, like I thought so. Faraway fella, betcha be rich, hmm?");
+        }
+        if (page == 13)
+        {
+            dialogue.SetText("Ya life or ya money, pick one bud. Or I’ll pick it for ya.");
+        }
+        if (page == 14)
+        {
+            bm.actionPhase(2);
+            dialogue.SetText("Look, this can be easy and simple.You can fork over the cash and get <color=green>knocked out</color>, or I’ll just <color=green>kill</color> you instead.");
+        }
+        if(page == 15)
+        {
+            dialogue.SetText("The bandit’s eyes widened in shock.");
+        }
+        if (page == 16)
+        {
+            dialogue.SetText("Blood, fresh blood, poured out of his mouth.");
+        }
+        if (page == 17)
+        {
+            dialogue.SetText("His eyes rolled back, then crumpled onto the floor.");
+        }
+        if (page == 18)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 19)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 20)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 21)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 22)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 23)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 24)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 25)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 26)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 27)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 27)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 29)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 30)
+        {
+            dialogue.SetText("");
+        }
+        if (page == 31)
+        {
+            dialogue.SetText("");
+        }
+
 
     }
 }
